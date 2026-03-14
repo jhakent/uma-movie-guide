@@ -528,6 +528,69 @@ body {
   margin: 0 auto;
 }
 
+
+.timeline {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background: var(--border-strong);
+  transform: translateY(-50%);
+}
+
+.timeline-dots {
+  display: flex;
+  justify-content: space-between;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--bg), 0 0 0 5px var(--border);
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-year {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-bright);
+  line-height: 1;
+}
+
+.timeline-text {
+  font-size: 11px;
+  font-weight: 300;
+  color: var(--text-dim);
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+@media (max-width: 640px) {
+  .timeline { padding: 36px 18px; }
+  .timeline-line { left: 10%; right: 10%; }
+}
+
 .divider { width: 100%; max-width: 920px; margin: 0 auto; padding: 0 24px; }
 .divider hr { border: none; height: 1px; background: linear-gradient(to right, transparent, var(--border-strong), transparent); }
 
