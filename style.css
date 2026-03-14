@@ -280,7 +280,13 @@ body {
 }
 
 .film-info h2.en {
-  -webkit-text-stroke: 0.4px currentColor;
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(23px, 4.5vw, 36px);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 1.15;
+  color: var(--text-bright);
+  margin-bottom: 6px;
 }
 
 .film-info .en-title {
