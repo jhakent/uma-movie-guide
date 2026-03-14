@@ -279,6 +279,10 @@ body {
   margin-bottom: 6px;
 }
 
+.film-info h2.en {
+  -webkit-text-stroke: 0.4px currentColor;
+}
+
 .film-info .en-title {
   font-family: 'Outfit', sans-serif;
   font-size: 12px;
