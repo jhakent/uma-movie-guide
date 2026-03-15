@@ -59,6 +59,18 @@ body {
   overflow-x: hidden;
 }
 
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 30% 90%, rgba(0,169,95,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 75% 15%, rgba(233,80,152,0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 50% 50%, rgba(79,184,230,0.04) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
 .en {
   font-family: 'Outfit', sans-serif;
   letter-spacing: 0.04em;
@@ -76,17 +88,6 @@ body {
   padding: 60px 24px;
   position: relative;
   overflow: hidden;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 70% 50% at 30% 90%, rgba(0,169,95,0.07) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 50% at 75% 15%, rgba(233,80,152,0.05) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 40% at 50% 50%, rgba(79,184,230,0.04) 0%, transparent 50%);
-  pointer-events: none;
 }
 
 .hero-badge {
