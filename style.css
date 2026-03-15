@@ -272,7 +272,7 @@ body {
 
 .film-info h2 {
   font-size: clamp(23px, 4.5vw, 36px);
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.055em;
   line-height: 1.15;
   color: var(--text-bright);
@@ -282,7 +282,7 @@ body {
 .film-info h2.en {
   font-family: 'Outfit', sans-serif;
   font-size: clamp(23px, 4.5vw, 36px);
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.055em;
   line-height: 1.15;
   color: var(--text-bright);
@@ -430,7 +430,7 @@ body {
 
 .char-ko {
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.045em;
   color: var(--text-bright);
   line-height: 1.25;
